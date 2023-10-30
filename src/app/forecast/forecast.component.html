@@ -1,0 +1,7 @@
+<div *ngIf="weatherData" class="forecast">
+    <div *ngFor="let day of weatherData.daily.time; let i = index" class="day">
+        <span class="date">{{day | date: 'E'}}</span>
+        <span class="icon">{{weatherCode[weatherData.daily.weathercode[i]]}}</span>
+        <span class="temperatures">{{weatherData.daily.temperature_2m_min[i] | number: '1.0-0'}}°C - {{weatherData.daily.temperature_2m_max[i] | number: '1.0-0'}}°C</span>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.search {
+
+    .list {
+        width: 100%;
+        background: transparent;
+        text-align: center;
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 0;
+
+            li {
+                padding: 0 20px;
+                &:hover {
+                    color: #ffe87e;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        border-radius: 0;
+        &:focus-visible {
+            outline: 0;
+        }
+    }
+
+}

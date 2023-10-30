@@ -1,0 +1,10 @@
+<div class="row my-5 g-0">
+    <div class="col search">
+        <input class="form-control-lg w-100" [(ngModel)]="search" (ngModelChange)="getLocations()" placeholder="Search location..." />
+        <div *ngIf="showList && locations.length" class="list mt-1">
+            <ul>
+                <li *ngFor="let location of locations" (click)="select(location)">{{location.name}}, {{location.country}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

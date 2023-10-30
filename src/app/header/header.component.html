@@ -1,0 +1,8 @@
+<div class="row my-5 g-0 header" *ngIf="selectedLocation.name && selectedLocation.currentTemp">
+    <div>
+        <h1>{{selectedLocation.name || 'Please select city'}}</h1>
+    </div>
+    <div>
+        <h2>{{selectedLocation.currentTemp}}°C</h2>
+    </div>
+</div>

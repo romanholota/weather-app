@@ -1,0 +1,27 @@
+.forecast {
+    margin: auto;
+    max-width: 200px;
+    font-size: 20px;
+
+    .day {
+        display: flex;
+        justify-content: space-between;
+
+        .date {
+            min-width: 20%;
+            text-align: left;
+        }
+
+        .icon {
+            min-width: 20%;
+            text-align: center;
+        }
+
+        .temperatures {
+            min-width: 60%;
+            text-align: right;
+        }
+
+    }
+
+}
